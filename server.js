@@ -24,7 +24,7 @@ app.use(
 );
 app.use(
   helmet.referrerPolicy({
-    policy: ["origin"],
+    policy: "same-origin",
   })
 );
 app.use(cors({ origin: "*" })); //For FCC testing purposes only
